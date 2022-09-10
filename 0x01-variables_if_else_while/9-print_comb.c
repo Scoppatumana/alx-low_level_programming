@@ -1,25 +1,22 @@
 #include <stdio.h>
 
 /**
- *  *main - print 0-9 separated with commas, using putchar
- *   *Return: Always 0 (Success)
-*/
-
+ * main - prints all possible combinations of single-digit numbers
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-	int n = '0';
+	int n;
 
-	while (n <= '9')
+	for (n = 48; n < 58; n++)
 	{
-	putchar(n);
-	if (n != '9')
-	{
-	putchar(',');
-	putchar(' ');
-	}
-	n++;
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
