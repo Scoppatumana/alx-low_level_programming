@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	unsigned int tens, digit, positive = n;
+	long int tens, digit, positive = n;
 	double t_beg = 1;
 
 	if (n == 0)
