@@ -13,10 +13,10 @@ char *_strncat(char *dest, char *src, int n)
 	int i = 0;
 	int j = 0;
 
-	while (dest[i] != '\0') /*i is index of null terminator*/
+	while (dest[i] != '\0') 
 		i++;
 
-	while (src[j] != src[n]) /*append replacing null terminator*/
+	while (src[j] != src[n])
 	{
 		dest[i] = src[j];
 		i++;
@@ -26,24 +26,4 @@ char *_strncat(char *dest, char *src, int n)
 
 	return (dest);
 }
-/* another method
 
-char *_strncat(char *dest, char *src, int n)
-{
-   //while dest exists and isn't null terminator yet
-   while (*dest)
-       dest++;
-
-   // replace dest while src exists and insert nulls till n bytes
-   for (i = 0; i < n; i++)
-   {
-	while (*src)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-   }
-}
-*/
